@@ -57,3 +57,4 @@ map("n", "<leader>ls", "<cmd>LiveServerStart<CR>", { desc = "Start live server" 
 map("n", "<leader>lo", "<cmd>LiveServerStop<CR>", { desc = "Stop live server" })
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+
