@@ -3,6 +3,7 @@ require "nvchad.mappings"
 -- add yours here
 
 local map = vim.keymap.set
+map("n", "@", "<cmd>CccPick<CR>", { desc = "Pick a color" })
 
 map("i", "qq", "<ESC>")
 -- window management

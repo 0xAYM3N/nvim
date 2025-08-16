@@ -11,6 +11,13 @@ return {
       require "configs.lspconfig"
     end,
   },
+  {
+    "uga-rosa/ccc.nvim",
+    cmd = "CccPick",
+    config = function()
+      require("ccc").setup({})
+    end,
+  },
 
   -- toggleterm plugin
   -- test new blink
