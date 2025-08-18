@@ -13,6 +13,10 @@ map("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })    -- make
 map("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
 --comment&trouble
 map("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
+--Find Files
+map("n", "<C-f>", "<cmd>Telescope find_files<CR>", { desc = "Find Files" })
+map("n", "<C-b>", "<cmd>Telescope buffers<CR>", { desc = "Find Buffers" })
+
 map("n", "<leader>tw", "<cmd>Trouble diagnostics toggle<CR>", { desc = "Open trouble workspace diagnostics" })
 map(
   "n",
