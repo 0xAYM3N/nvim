@@ -30,6 +30,7 @@ dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
 vim.opt.cmdheight = 0
+vim.o.wrap = false
 
 require "options"
 require "autocmds"
