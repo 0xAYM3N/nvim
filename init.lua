@@ -31,6 +31,7 @@ dofile(vim.g.base46_cache .. "statusline")
 
 vim.opt.cmdheight = 0
 vim.o.wrap = false
+vim.o.termbidi = true
 
 require "options"
 require "autocmds"
