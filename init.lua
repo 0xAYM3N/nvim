@@ -29,13 +29,22 @@ require("lazy").setup({
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
-vim.opt.cmdheight = 0
-vim.o.wrap = false
-vim.o.termbidi = true
-
 require "options"
 require "autocmds"
 
 vim.schedule(function()
   require "mappings"
 end)
+
+vim.api.nvim_create_autocmd("VimEnter", {
+   callback = function()
+      vim.opt.cmdheight = 0
+      vim.o.wrap = false
+      vim.o.termbidi = true
+      vim.opt.statusline='%#Normal #'
+      vim.opt.laststatus=0
+      vim.api.nvim_set_hl(0, "StatusLine", { bg = nil })
+      vim.api.nvim_set_hl(0, "StatusLineNC", { bg = nil })
+    end
+})
+
